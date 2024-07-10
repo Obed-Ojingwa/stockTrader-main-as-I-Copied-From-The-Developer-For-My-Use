@@ -1,0 +1,167 @@
+#heading {
+    text-align: center;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+#favorite-market-searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#favorite-market-results {
+    position: absolute;
+    width: 15rem;
+    z-index: 1;
+    background-color: white;
+}
+
+#favorite-market-results > div {
+    padding-left: 0 0.5rem;
+    border: 1px solid #dee2e6;
+}
+
+.result-item-favorite-market {
+    padding: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+    transition: background-color 0.5s ease;
+    margin: 0;
+    cursor: pointer;
+}
+
+.result-item-favorite-market:last-child {
+    border-bottom: none;
+}
+
+.result-item-favorite-market:hover {
+    background-color: #dee2e6;
+}
+
+#settings {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 4rem;
+}
+
+#settings input {
+    width: 15rem;
+}
+
+#modal .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+#modal .modal-body .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+#modal .modal-body .content p {
+    text-align: center;
+    margin: 0;
+}
+
+#modal .modal-body .content .error {
+    color: red;
+}
+
+#modal .modal-body .content .success {
+    color: green;
+}
+
+#userDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#userDiv p {
+    margin: 0;
+}
+
+#userDiv .greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.warning {
+    color: red;
+    font-size: 1.1rem;
+}
+
+#waringBtn {
+    margin-top: 1rem;
+}
+
+#profilePicture {
+    width: 8rem;
+}
+
+#profilePictureDiv {
+    cursor: pointer;
+}
+
+.profile-picture-item {
+    width: 8rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+#profile-picture-modal > .modal-dialog {
+    max-width: 80vw;
+}
+
+#profile-picture-modal .content {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile-picture-modal .content > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-left: 2rem;
+}
+
+#profile-picture-modal .content > div > div:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+#profile-picture-modal .content > div > div:last-child {
+    margin-bottom: 2.5rem;
+}
+
+#profile-picture-modal .close-button {
+    width: 100%;
+}
+
+.profile-picture-category {
+    margin-top: 1rem;
+}

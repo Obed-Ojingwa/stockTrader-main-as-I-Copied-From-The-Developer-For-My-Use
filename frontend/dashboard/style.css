@@ -1,0 +1,160 @@
+#overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6vh 8vw;
+}
+
+#overview > div:first-child {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+#overview > div > div:first-child,
+#overview > div > div:nth-child(2) {
+    display: contents;
+    font-size: 1.5rem;
+}
+
+#overview > div > div:first-child span:first-child,
+#overview > div > div:nth-child(2) span:first-child {
+    grid-column: 1;
+}
+
+#overview > div > div:first-child span:last-child,
+#overview > div > div:nth-child(2) span:last-child {
+    grid-column: 2;
+    text-align: right;
+}
+
+#tab-selection {
+    margin: 3vh 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 15vw;
+}
+
+#tab > h1 {
+    text-align: center;
+}
+
+#buy-form-container {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buy-form {
+    width: 25rem;
+}
+
+#modal .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+#modal .modal-body p {
+    text-align: center;
+    margin: 0;
+}
+
+#modal .modal-body .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+#modal .modal-body .content p {
+    text-align: center;
+    margin: 0;
+}
+
+#modal .modal-body .content .error {
+    color: red;
+}
+
+#modal .modal-body .content .success {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.table tbody td p {
+    margin: 0;
+}
+
+.quantity-table tbody input {
+    text-align: right;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    width: 4rem;
+    padding-right: 0.25rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#sell-button,
+#buy-stocks-button {
+    width: 5rem;
+}
+
+.buy-stocks-table tbody td,
+.sell-stocks-table tbody td {
+    vertical-align: middle;
+}
+
+.market-name {
+    font-weight: normal !important;
+}
+
+#chart-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+#chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 80vw;
+}
+
+#chart {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
